@@ -19,16 +19,50 @@ int main()
 {
     setlocale(LC_ALL,"portuguese");
     printf("Lista 2 de exercicios\n");
-    //ex01();
-    //ex02();
-    //ex03();
-    //ex04();
-    //ex05();
-    //ex06();
-    //ex07();
-    //ex08();
-    //ex09();
-    ex10();
+    int op;
+    printf("qual exercicio deseja executar?");
+    scanf("%i",&op);
+    while(ex!=0)
+    {
+        switch (op)
+        {
+        case 1:
+            ex01();
+            break;
+        case 2:
+            ex02();
+            break;
+        case 3:
+            ex03();
+            break;
+       case 4:
+            ex04();
+            break;
+        case 5:
+            ex05();
+            break;
+        case 6:
+            ex06();
+            break;
+        case 7:
+            ex07();
+            break;
+        case 8:
+            ex08();
+            break;
+        case 9:
+            ex09();
+            break;
+        case 10:
+            ex10();
+            break;*/
+        case 0:
+            printf("finalizando programa");
+
+        }
+
+    }
+    
     return 0;
 }
 
