@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1712774326 source:c:\users\otavio\desktop\verde\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+	<locale.h>
+	<string.h>
+
+1713071383 source:c:\users\otavio\documents\lista verde\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+	<locale.h>
+	<string.h>
+
