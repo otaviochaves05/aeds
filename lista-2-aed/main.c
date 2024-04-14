@@ -19,58 +19,24 @@ int main()
 {
     setlocale(LC_ALL,"portuguese");
     printf("Lista 2 de exercicios\n");
-    int op;
-    printf("qual exercicio deseja executar?");
-    scanf("%i",&op);
-    while(ex!=0)
-    {
-        switch (op)
-        {
-        case 1:
-            ex01();
-            break;
-        case 2:
-            ex02();
-            break;
-        case 3:
-            ex03();
-            break;
-       case 4:
-            ex04();
-            break;
-        case 5:
-            ex05();
-            break;
-        case 6:
-            ex06();
-            break;
-        case 7:
-            ex07();
-            break;
-        case 8:
-            ex08();
-            break;
-        case 9:
-            ex09();
-            break;
-        case 10:
-            ex10();
-            break;*/
-        case 0:
-            printf("finalizando programa");
-
-        }
-
-    }
-    
+    //ex01();
+    //ex02();
+    //ex03();
+    //ex04();
+    //ex05();
+    //ex06();
+    //ex07();
+    //ex08();
+    //ex09();
+    ex10();
     return 0;
 }
 
 int ex01()
-//Fazer um algoritmo que leia um nï¿½mero inteiro e mostre uma mensagem indicando se este nï¿½mero e par ou ï¿½mpar.
+//Fazer um algoritmo que leia um número inteiro e mostre uma mensagem indicando se este número e par ou ímpar.
 
 {
-    printf("Fazer um algoritmo que leia um nï¿½mero inteiro e mostre uma mensagem indicando se este nï¿½mero e par ou ï¿½mpar.\n");
+    printf("Fazer um algoritmo que leia um número inteiro e mostre uma mensagem indicando se este número e par ou ímpar.\n");
 
     int num;
     printf("digite um numero: \n");
@@ -88,11 +54,11 @@ int ex01()
 
 
 int ex02()
-//Fazer um algoritmo peï¿½a o nome e as 3 notas de um aluno e mostre, alï¿½m do nome e do valor da mï¿½dia do aluno,
-//uma mensagem de "Aprovado", caso a mï¿½dia seja igual ou superior a 6, ou a mensagem "reprovado", caso
-//contrï¿½rio.
+//Fazer um algoritmo peça o nome e as 3 notas de um aluno e mostre, além do nome e do valor da média do aluno,
+//uma mensagem de "Aprovado", caso a média seja igual ou superior a 6, ou a mensagem "reprovado", caso
+//contrário.
 {
-    printf("Fazer um algoritmo peï¿½a o nome e as 3 notas de um aluno e mostre, alï¿½m do nome e do valor da mï¿½dia do aluno,uma mensagem de Aprovado, caso a mï¿½dia seja igual ou superior a 6, ou a mensagem reprovado, caso contrï¿½rio. \n");
+    printf("Fazer um algoritmo peça o nome e as 3 notas de um aluno e mostre, além do nome e do valor da média do aluno,uma mensagem de Aprovado, caso a média seja igual ou superior a 6, ou a mensagem reprovado, caso contrário. \n");
 
     char nome[20];
     float n1,n2,n3,media;
@@ -123,9 +89,9 @@ int ex02()
 
 
 int ex03()
-//Fazer um algoritmo que leia a temperatura da ï¿½gua e mostre se estï¿½ no estado solido, lï¿½quido ou gasoso.
+//Fazer um algoritmo que leia a temperatura da água e mostre se está no estado solido, líquido ou gasoso.
 {
-    printf("Fazer um algoritmo que leia a temperatura da ï¿½gua e mostre se estï¿½ no estado solido, lï¿½quido ou gasoso.\n");
+    printf("Fazer um algoritmo que leia a temperatura da água e mostre se está no estado solido, líquido ou gasoso.\n");
 
     float temperatura;
 
@@ -184,11 +150,11 @@ int ex04()
 
 int ex05()
 
-//Construa um algoritmo que receba como entrada trï¿½s valores (A,B e C). Apï¿½s o processamento o menor valor
-//deverï¿½ estar em A e o maior valor em C, e o valor intermediï¿½rio em B. Imprima A,B e C.
+//Construa um algoritmo que receba como entrada três valores (A,B e C). Após o processamento o menor valor
+//deverá estar em A e o maior valor em C, e o valor intermediário em B. Imprima A,B e C.
 
 {
-    printf("Construa um algoritmo que receba como entrada trï¿½s valores (A,B e C). Apï¿½s o processamento o menor valor deverï¿½ estar em A e o maior valor em C, e o valor intermediï¿½rio em B. Imprima A,B e C.\n");
+    printf("Construa um algoritmo que receba como entrada três valores (A,B e C). Após o processamento o menor valor deverá estar em A e o maior valor em C, e o valor intermediário em B. Imprima A,B e C.\n");
 
     int a,b,c,aux;
 
@@ -226,12 +192,12 @@ int ex05()
 }
 
 int ex06()
-//Desenvolver um algoritmo que leia trï¿½s nï¿½meros inteiros: X, Y, Z e verifique se o nï¿½mero X ï¿½ divisï¿½vel por Y e por Z.
-//O algoritmo deverï¿½ mostrar as possï¿½veis mensagens:
-//- o nï¿½mero ï¿½ divisï¿½vel por Y e Z.
-//- o nï¿½mero ï¿½ divisï¿½vel por Y mas nï¿½o por Z.
-//- o nï¿½mero ï¿½ divisï¿½vel por Z mas nï¿½o por Y.
-//- o nï¿½mero nï¿½o ï¿½ divisï¿½vel nem Y nem por Z.
+//Desenvolver um algoritmo que leia três números inteiros: X, Y, Z e verifique se o número X é divisível por Y e por Z.
+//O algoritmo deverá mostrar as possíveis mensagens:
+//- o número é divisível por Y e Z.
+//- o número é divisível por Y mas não por Z.
+//- o número é divisível por Z mas não por Y.
+//- o número não é divisível nem Y nem por Z.
 
 {
 
@@ -275,11 +241,11 @@ int ex06()
 
 int ex07()
 
-//O nï¿½mero 3025 possui a seguinte caracterï¿½stica:
+//O número 3025 possui a seguinte característica:
 //30 + 25 = 55
 //552 = 3025
-//Fazer um algoritmo que dado um nï¿½mero de 4 dï¿½gitos (verifique se o nï¿½mero pertence a faixa) calcule e escreva se ele
-//possui ou nï¿½o esta caracterï¿½stica.
+//Fazer um algoritmo que dado um número de 4 dígitos (verifique se o número pertence a faixa) calcule e escreva se ele
+//possui ou não esta característica.
 
 {
     int numero,d1,d2,soma,quadrado_soma;
@@ -313,11 +279,11 @@ int ex07()
 
 int ex08()
 
-/*ler um cï¿½digo do teclado e mostrar o nome correspondente, de acordo com a lista :
+/*ler um código do teclado e mostrar o nome correspondente, de acordo com a lista :
 221 Bernardo
-211 Eustï¿½quio
+211 Eustáquio
 311 Luiz
-312 Mï¿½rio
+312 Mário
 332 Artur*/
 
 {
@@ -353,8 +319,8 @@ int ex08()
 
 
 int ex09()
-/*Nï¿½meros palï¿½ndromos sï¿½o aqueles que escritos da direita para esquerda ou da esquerda para direita tem o mesmo valor.
-    Exemplo:929, 44, 97379. Fazer um algoritmo que dado um nï¿½mero de 5 dï¿½gitos; calcule e escreva se este e ou nï¿½o palï¿½ndromo*/
+/*Números palíndromos são aqueles que escritos da direita para esquerda ou da esquerda para direita tem o mesmo valor.
+    Exemplo:929, 44, 97379. Fazer um algoritmo que dado um número de 5 dígitos; calcule e escreva se este e ou não palíndromo*/
 {
     int num,d1,d2,d4,d5;
 
@@ -380,12 +346,12 @@ int ex09()
 int ex10()
 {
 
-    /*Desenvolver um algoritmo para calcular a conta de ï¿½gua para a SANEAGO. O custo da ï¿½gua varia dependendo do tipo do
+    /*Desenvolver um algoritmo para calcular a conta de água para a SANEAGO. O custo da água varia dependendo do tipo do
 consumidor - residencial, comercial ou industrial. A regra para calcular a conta e:
-ï¿½ Residencial: R$ 75,00 de taxa mais R$ 3,50 por m3 gastos;
-ï¿½ Comercial: R$ 500,00 para os primeiros 80 m3 gastos mais R$ 5,50 por m3 gastos acima dos 80 m3;
-ï¿½ Industrial: R$ 800,00 para os primeiros 100 m3 gastos mas R$ 8,00 por m3 gastos acima dos 100 m3;
-O algoritmo devera ler a conta do cliente, seu tipo (residencial, comercial e industrial) e o seu consumo de ï¿½gua em metros cubos.
+• Residencial: R$ 75,00 de taxa mais R$ 3,50 por m3 gastos;
+• Comercial: R$ 500,00 para os primeiros 80 m3 gastos mais R$ 5,50 por m3 gastos acima dos 80 m3;
+• Industrial: R$ 800,00 para os primeiros 100 m3 gastos mas R$ 8,00 por m3 gastos acima dos 100 m3;
+O algoritmo devera ler a conta do cliente, seu tipo (residencial, comercial e industrial) e o seu consumo de água em metros cubos.
 Como resultado imprimir o valor a ser pago pelo mesmo.*/
 
     int tipo;
