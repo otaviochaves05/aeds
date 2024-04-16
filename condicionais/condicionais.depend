@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1709839988 source:c:\users\otavio\desktop\exercicios condicionais aed\condicionais\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	<math.h>
+	<locale.h>
+
