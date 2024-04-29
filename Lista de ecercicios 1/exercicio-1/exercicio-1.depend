@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1709333778 source:d:\faculdade\semestre 1\aed\c\lista de ecercicios 1\exercicio-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+
+1709747373 source:c:\users\otavio\desktop\faculdade\semestre 1\aed\c\lista de ecercicios 1\exercicio-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+	<locale.h>
+
+1709783592 source:c:\users\otavi\onedrive\desktop\06.03\exercicio-1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<stdbool.h>
+	<locale.h>
+
