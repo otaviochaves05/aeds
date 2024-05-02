@@ -3,7 +3,7 @@
 #include <math.h>
 #include <locale.h>
 
-void gravarFibo();
+void gravarFibo(int n);
 void verificarParImpar();
 void verificarPrimo();
 double a,b,c,numero;
@@ -72,7 +72,7 @@ void verificarParImpar()
     for (int i=0; i<= 63; i++)
     {
         fscanf(arquivoPrincipal,"%lf",&numero);
-        if ((int)numero%2==0)
+        if (fmod(numero,2) == 0)
         {
             fprintf(arquivoPar,"%.0lf\n",numero);
         }
@@ -88,36 +88,31 @@ void verificarParImpar()
 
 void verificarPrimo()
 {
-    arquivoPrincipal = fopen("fibonacci.txt","r");
-    if (arquivoPrincipal == NULL)
+    if ((arquivoPrincipal = fopen("fibonacci.txt", "r")) == NULL)
     {
-        printf("Erro Primos!!");
-    }
-    arquivoPrimo = fopen("primos.txt","w");
-    if (arquivoPrimo == NULL)
-    {
-        printf("Erro ao abrir o arquivo de saída.");
+        printf("Erro ao abrir o arquivo para leitura!");
     }
 
-    for (int i=0; i<64; i++)
+    if ((arquivoPrimo = fopen("primos.txt", "w")) == NULL)
+    {
+        printf("Erro ao abrir o arquivo de saída!");
+    }
+    while (fscanf(arquivoPrincipal, "%lf", &numero) != EOF)
     {
         int divisores = 0;
-        fscanf(arquivoPrincipal,"%lf",&numero);
-        for (int j=2; j<=numero; j++)
+        for (int i = 2; i <= sqrt(numero); i++)
         {
-            if ((int)numero%j==0)
+            if (fmod(numero, i) == 0)
             {
                 divisores++;
             }
         }
-        if (divisores == 2)
+        if (divisores == 0 && numero > 1)
         {
-            fprintf(arquivoPrimo,"%.0lf\n",numero);
+            fprintf(arquivoPrimo, "%.0lf\n", numero);
         }
     }
     fclose(arquivoPrincipal);
     fclose(arquivoPrimo);
-
 }
-
 
